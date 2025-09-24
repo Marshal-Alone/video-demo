@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Demo Video</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #000;
+        }
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/CAr02YlEJUc?autoplay=1&controls=1&showinfo=0&rel=0" 
+            title="Project Demo" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <script>
+        // You can update the video ID here without changing the URL
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     const videoFrame = document.querySelector('iframe');
+        //     videoFrame.src = "https://www.youtube.com/embed/NEW_VIDEO_ID?autoplay=1&controls=1&showinfo=0&rel=0";
+        // });
+    </script>
+</body>
+</html>
